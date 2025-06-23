@@ -71,8 +71,9 @@ export default defineComponent({
               </defs>
             </svg>
             <div class="blob-photo">
-              <img src="@/assets/image.png" alt="Blob Photo" class="blob-img" />
+              <img src="@/assets/portfolio.jpg" alt="Blob Photo" />
             </div>
+
           </div>
         </td>
         <td>
@@ -172,7 +173,7 @@ export default defineComponent({
 
   .blob-photo {
     width: 400px;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; /* Forme blob */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
@@ -189,6 +190,7 @@ export default defineComponent({
     height: 100%;
     object-fit: cover;
     clip-path: url(#blobClip);
+    object-position: right top;
   }
   .profile-presentation{
     color:white;
